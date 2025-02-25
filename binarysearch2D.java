@@ -34,7 +34,7 @@ public class binarysearch2D {
         }
         return new int[]{-1,-1};
     }
-    static int[] BinarySearch(int[][] matrix, int row, int cStart, int cEnd, int target) {
+    static int[] binarySearch(int[][] matrix, int row, int cStart, int cEnd, int target) {
         while (cStart <= cEnd) {
             int mid = cStart + (cEnd - cStart) / 2;
             if (matrix[row][mid] == target) {
@@ -99,5 +99,6 @@ public class binarysearch2D {
         } else {
             return binarySearch(matrix, rStart + 1, cMid + 1, cols - 1, target);
         }
+        obj.close();
     }
 }

@@ -28,5 +28,6 @@ public class binarysearch {
             }
         }
         System.out.println("The " + n+ " element is found at index "+ index);
+        obj.close();
     }
 }

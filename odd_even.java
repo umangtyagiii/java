@@ -10,6 +10,7 @@ public class odd_even {
         System.out.print("Enter number: ");
         Scanner obj = new Scanner(System.in);
         n = obj.nextInt();
+        obj.close();
         if(n%2 == 0){
             System.out.println("Entered number is even!");
         }
