@@ -99,6 +99,5 @@ public class binarysearch2D {
         } else {
             return binarySearch(matrix, rStart + 1, cMid + 1, cols - 1, target);
         }
-        obj.close();
     }
 }
