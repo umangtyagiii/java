@@ -10,6 +10,7 @@ public class bubblesort {
         for(int i=0; i<n; i++){
             arr[i] = obj.nextInt();
         }
+        obj.close();
         System.out.println("The sorted array is: "+Arrays.toString(bubblesort(arr, n)));
     }
     public static int[] bubblesort(int  arr[], int n){

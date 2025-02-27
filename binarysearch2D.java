@@ -15,6 +15,7 @@ public class binarysearch2D {
         }
         System.out.println("Enter target:");
         int t = obj.nextInt();
+        obj.close();
         //System.out.println(Arrays.toString(searchunsorted(arr, t)));
         System.out.println(Arrays.toString(searchsorted(arr, t)));
     }

@@ -9,6 +9,7 @@ public class cyclesort {
         for(int i=0; i<n; i++){
             arr[i] = obj.nextInt();
         }
+        obj.close();
         System.out.println("The sorted array is: "+Arrays.toString(cyclesort(arr, n)));
     }
     public static int[] cyclesort(int  arr[], int n){
