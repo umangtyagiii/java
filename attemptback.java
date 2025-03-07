@@ -1,13 +1,15 @@
 import java.util.*;
 public class attemptback {
     public static void main(String [] args){
-        boolean board[][]={
+        Scanner obj = new Scanner(System.in);
+        boolean [][]board={
             {true,true,true},
             {true,true,true},
             {true,true,true}
         };
-        int [][] path = new int[board.length][board[0].length];
+        int [][]path=new int[board.length][board[0].length];
         allPathPrint("",board,0,0,path,1);
+        allPath("",board,0,0);
     }
     public static void allPath(String p, boolean[][]board, int r, int c){
         if(r==board.length-1 && c==board[0].length-1){
@@ -36,7 +38,7 @@ public class attemptback {
     public static void allPathPrint(String p, boolean[][]board, int r, int c, int [][]path, int step){
         if(r==board.length-1 && c==board[0].length-1){
             path[r][c]=step;
-            for(int[] arr: path){
+            for(int arr[] : path){
                 System.out.println(Arrays.toString(arr));
             }
             System.out.println(p);
