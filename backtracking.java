@@ -7,8 +7,9 @@ public class backtracking {
             {true, true, true}
     };
     int[][] path = new int[board.length][board[0].length];
-    allPathPrint("", board, 0, 0, path, 1);
     allPath("", board, 0, 0);
+    allPathPrint("", board, 0, 0, path, 1);
+    
 }
 static void allPath(String p, boolean[][] maze, int r, int c) {
     if (r == maze.length - 1 && c == maze[0].length - 1) {
